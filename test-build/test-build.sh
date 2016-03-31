@@ -9,5 +9,5 @@ sed -i 's/\$\$BUILD_NUMBER\$\$/'${BUILD_NUMBER}'/g' docker-compose.yml
 sed -i 's/\$\$PORT_NUMBER\$\$/'`expr 5000 + ${BUILD_NUMBER}`'/g' docker-compose.yml
 chmod 777 ./rancher-compose
 
-./rancher-compose --access-key DEFA2428EAA316EA7D98 --secret-key TiXx5PRF28bREQ61qxRcPBXLhVG4TzLNfBvin2hg -p python-redis-demo-build${BUILD_NUMBER} up -d
+./rancher-compose --access-key 835FE7ADA01ED73A9BDE --secret-key vzQmg3z6kKAsYg9sYeNDoWTsh5Vht1i9TQewYyxz -p python-redis-demo-build${BUILD_NUMBER} up -d
 
