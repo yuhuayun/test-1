@@ -11,3 +11,4 @@ chmod 777 ./rancher-compose
 
 ./rancher-compose --access-key E0F535B1D46D84442A4F --secret-key bWySMz9vy9zcMxuhS3XBPg8hjbxVnt3k7nDsXaZo -p python-redis-demo-build${BUILD_NUMBER} up -d
 
+python-redis-demo-build3 up --pull -d --confirm-upgrade  --upgrade pyapp   
